@@ -5,7 +5,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include <curl/curl.h>
+//#include <curl/curl.h>
 #include <openssl/buffer.h>
 #include <openssl/evp.h>
 #include <openssl/sha.h>

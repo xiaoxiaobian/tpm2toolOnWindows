@@ -15,7 +15,294 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="tools.cpp">
+    <ClInclude Include="tpm2_tool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="tpm2_activatecredential.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_certify.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_certifycreation.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_changeauth.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_changeeps.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_changepps.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_clear.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_clearcontrol.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_clockrateadjust.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_commit.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_create.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_createak.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_createek.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_createpolicy.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_createprimary.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_dictionarylockout.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_duplicate.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_ecdhkeygen.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_ecdhzgen.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_ecephemeral.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_encryptdecrypt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_evictcontrol.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_flushcontext.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_getcap.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_getcommandauditdigest.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_geteccparameters.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_getpolicydigest.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_getrandom.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_getsessionauditdigest.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_gettestresult.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_gettime.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_hash.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_hierarchycontrol.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_hmac.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_import.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_incrementalselftest.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_load.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_loadexternal.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_makecredential.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_nvcertify.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_nvdefine.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_nvextend.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_nvincrement.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_nvread.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_nvreadlock.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_nvreadpublic.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_nvsetbits.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_nvundefine.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_nvwrite.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_nvwritelock.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_pcrallocate.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_pcrevent.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_pcrextend.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_pcrread.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_pcrreset.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_policyauthorize.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_policyauthorizenv.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_policyauthvalue.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_policycommandcode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_policycountertimer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_policycphash.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_policyduplicationselect.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_policylocality.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_policynamehash.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_policynv.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_policynvwritten.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_policyor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_policypassword.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_policypcr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_policyrestart.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_policysecret.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_policysigned.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_policytemplate.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_policyticket.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_quote.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_readclock.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_readpublic.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_rsadecrypt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_rsaencrypt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_selftest.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_send.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_sessionconfig.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_setclock.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_setcommandauditstatus.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_setprimarypolicy.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_shutdown.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_sign.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_startauthsession.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_startup.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_stirrandom.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_testparms.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_tool.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_unseal.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_verifysignature.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_zgen2phase.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

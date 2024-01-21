@@ -107,8 +107,7 @@ static tool_rc tpm_hmac_file(ESYS_CONTEXT *ectx, TPM2B_DIGEST **result,
     bool done = false;
     while (!done) {
 
-        size_t bytes_read = fread(data.buffer, 1,
-                BUFFER_SIZE(typeof(data), buffer), input);
+        size_t bytes_read = fread(data.buffer, 1, TPM2_MAX_DIGEST_BUFFER, input);
         if (ferror(input)) {
             LOG_ERR("Error reading from input file");
             return tool_rc_general_error;

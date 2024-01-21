@@ -69,8 +69,6 @@ void tpm2_tool_register(const tpm2_tool * tool);
 		.onexit		= tool_onexit, \
 	}; \
 	static void \
-	__attribute__((__constructor__)) \
-	__attribute__((__used__)) \
 	_tpm2_tool_init(void) \
 	{ \
 		tpm2_tool_register(&tool); \

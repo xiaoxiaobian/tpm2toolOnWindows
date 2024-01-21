@@ -16,23 +16,27 @@
 
 typedef union tpm2_command_header tpm2_command_header;
 union tpm2_command_header {
+#pragma pack(push, 1) 
     struct {
         TPMI_ST_COMMAND_TAG tag; // uint16
         UINT32 size; //
         TPM2_CC command_code;
         UINT8 data[];
-    }__attribute__((packed));
+    };
+#pragma pack(pop)
     UINT8 bytes[0];
 };
 
 typedef union tpm2_response_header tpm2_response_header;
 union tpm2_response_header {
+#pragma pack(push, 1) 
     struct {
         TPM2_ST tag;
         UINT32 size;
         TSS2_RC response_code;
         UINT8 data[];
-    }__attribute__((packed));
+    };
+#pragma pack(pop)
     UINT8 bytes[0];
 };
 

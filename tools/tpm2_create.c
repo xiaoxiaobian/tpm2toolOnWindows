@@ -448,8 +448,7 @@ static tool_rc check_options(void) {
 
 static bool load_sensitive(void) {
 
-    ctx.object.sensitive.sensitive.data.size = BUFFER_SIZE(
-            typeof(ctx.object.sensitive.sensitive.data), buffer);
+    ctx.object.sensitive.sensitive.data.size = TPM2_MAX_DIGEST_BUFFER;
 
     return files_load_bytes_from_buffer_or_file_or_stdin(NULL,
         ctx.object.sealed_data, &ctx.object.sensitive.sensitive.data.size,

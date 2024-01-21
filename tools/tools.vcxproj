@@ -18,6 +18,106 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="tpm2_tool.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="tpm2_activatecredential.c" />
+    <ClCompile Include="tpm2_certify.c" />
+    <ClCompile Include="tpm2_certifycreation.c" />
+    <ClCompile Include="tpm2_changeauth.c" />
+    <ClCompile Include="tpm2_changeeps.c" />
+    <ClCompile Include="tpm2_changepps.c" />
+    <ClCompile Include="tpm2_clear.c" />
+    <ClCompile Include="tpm2_clearcontrol.c" />
+    <ClCompile Include="tpm2_clockrateadjust.c" />
+    <ClCompile Include="tpm2_commit.c" />
+    <ClCompile Include="tpm2_create.c" />
+    <ClCompile Include="tpm2_createak.c" />
+    <ClCompile Include="tpm2_createek.c" />
+    <ClCompile Include="tpm2_createpolicy.c" />
+    <ClCompile Include="tpm2_createprimary.c" />
+    <ClCompile Include="tpm2_dictionarylockout.c" />
+    <ClCompile Include="tpm2_duplicate.c" />
+    <ClCompile Include="tpm2_ecdhkeygen.c" />
+    <ClCompile Include="tpm2_ecdhzgen.c" />
+    <ClCompile Include="tpm2_ecephemeral.c" />
+    <ClCompile Include="tpm2_encryptdecrypt.c" />
+    <ClCompile Include="tpm2_evictcontrol.c" />
+    <ClCompile Include="tpm2_flushcontext.c" />
+    <ClCompile Include="tpm2_getcap.c" />
+    <ClCompile Include="tpm2_getcommandauditdigest.c" />
+    <ClCompile Include="tpm2_geteccparameters.c" />
+    <ClCompile Include="tpm2_getpolicydigest.c" />
+    <ClCompile Include="tpm2_getrandom.c" />
+    <ClCompile Include="tpm2_getsessionauditdigest.c" />
+    <ClCompile Include="tpm2_gettestresult.c" />
+    <ClCompile Include="tpm2_gettime.c" />
+    <ClCompile Include="tpm2_hash.c" />
+    <ClCompile Include="tpm2_hierarchycontrol.c" />
+    <ClCompile Include="tpm2_hmac.c" />
+    <ClCompile Include="tpm2_import.c" />
+    <ClCompile Include="tpm2_incrementalselftest.c" />
+    <ClCompile Include="tpm2_load.c" />
+    <ClCompile Include="tpm2_loadexternal.c" />
+    <ClCompile Include="tpm2_makecredential.c" />
+    <ClCompile Include="tpm2_nvcertify.c" />
+    <ClCompile Include="tpm2_nvdefine.c" />
+    <ClCompile Include="tpm2_nvextend.c" />
+    <ClCompile Include="tpm2_nvincrement.c" />
+    <ClCompile Include="tpm2_nvread.c" />
+    <ClCompile Include="tpm2_nvreadlock.c" />
+    <ClCompile Include="tpm2_nvreadpublic.c" />
+    <ClCompile Include="tpm2_nvsetbits.c" />
+    <ClCompile Include="tpm2_nvundefine.c" />
+    <ClCompile Include="tpm2_nvwrite.c" />
+    <ClCompile Include="tpm2_nvwritelock.c" />
+    <ClCompile Include="tpm2_pcrallocate.c" />
+    <ClCompile Include="tpm2_pcrevent.c" />
+    <ClCompile Include="tpm2_pcrextend.c" />
+    <ClCompile Include="tpm2_pcrread.c" />
+    <ClCompile Include="tpm2_pcrreset.c" />
+    <ClCompile Include="tpm2_policyauthorize.c" />
+    <ClCompile Include="tpm2_policyauthorizenv.c" />
+    <ClCompile Include="tpm2_policyauthvalue.c" />
+    <ClCompile Include="tpm2_policycommandcode.c" />
+    <ClCompile Include="tpm2_policycountertimer.c" />
+    <ClCompile Include="tpm2_policycphash.c" />
+    <ClCompile Include="tpm2_policyduplicationselect.c" />
+    <ClCompile Include="tpm2_policylocality.c" />
+    <ClCompile Include="tpm2_policynamehash.c" />
+    <ClCompile Include="tpm2_policynv.c" />
+    <ClCompile Include="tpm2_policynvwritten.c" />
+    <ClCompile Include="tpm2_policyor.c" />
+    <ClCompile Include="tpm2_policypassword.c" />
+    <ClCompile Include="tpm2_policypcr.c" />
+    <ClCompile Include="tpm2_policyrestart.c" />
+    <ClCompile Include="tpm2_policysecret.c" />
+    <ClCompile Include="tpm2_policysigned.c" />
+    <ClCompile Include="tpm2_policytemplate.c" />
+    <ClCompile Include="tpm2_policyticket.c" />
+    <ClCompile Include="tpm2_quote.c" />
+    <ClCompile Include="tpm2_readclock.c" />
+    <ClCompile Include="tpm2_readpublic.c" />
+    <ClCompile Include="tpm2_rsadecrypt.c" />
+    <ClCompile Include="tpm2_rsaencrypt.c" />
+    <ClCompile Include="tpm2_selftest.c" />
+    <ClCompile Include="tpm2_send.c" />
+    <ClCompile Include="tpm2_sessionconfig.c" />
+    <ClCompile Include="tpm2_setclock.c" />
+    <ClCompile Include="tpm2_setcommandauditstatus.c" />
+    <ClCompile Include="tpm2_setprimarypolicy.c" />
+    <ClCompile Include="tpm2_shutdown.c" />
+    <ClCompile Include="tpm2_sign.c" />
+    <ClCompile Include="tpm2_startauthsession.c" />
+    <ClCompile Include="tpm2_startup.c" />
+    <ClCompile Include="tpm2_stirrandom.c" />
+    <ClCompile Include="tpm2_testparms.c" />
+    <ClCompile Include="tpm2_tool.c" />
+    <ClCompile Include="tpm2_unseal.c" />
+    <ClCompile Include="tpm2_verifysignature.c" />
+    <ClCompile Include="tpm2_zgen2phase.c" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{500627AB-51BC-4A05-AEA7-1D36E9F2A130}</ProjectGuid>
@@ -43,7 +143,7 @@
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v141</PlatformToolset>
-    <CharacterSet>Unicode</CharacterSet>
+    <CharacterSet>NotSet</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -75,6 +175,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\repo\tpm2-tss\include\;../lib;../Misc;C:\Program Files\OpenSSL-Win64\include;$(VCClangInstallDir)include;$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
+    <LibraryPath>C:\repo\tpm2-tss\x64\Debug;C:\Program Files\OpenSSL-Win64\lib\VC\x64\MDd;$(OutDir);$(VCClangInstallDir)lib\x64;$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -101,15 +203,18 @@
     <ClCompile>
       <PrecompiledHeader>
       </PrecompiledHeader>
-      <WarningLevel>Level3</WarningLevel>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_WIN64;ESYS_3_0;_CRT_SECURE_NO_WARNINGS;INTERNALBUILD;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderCompileAs>CompileAsCpp</PrecompiledHeaderCompileAs>
+      <CompileAs>Default</CompileAs>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Crypt32.lib;WS2_32.lib;tss2-esys.lib;tss2-tctildr.lib;tss2-mu.lib;tss2-sys.lib;libssl_static.lib;libcrypto_static.lib;tss2-rc.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;lib.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -150,9 +255,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="tools.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

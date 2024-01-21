@@ -268,7 +268,7 @@ int main(int argc, char **argv) {
         /* nothing to do here */
         break;
     case tool_rc_option_error:
-        tpm2_print_usage(argv[0], ctx.tool_opts);
+        //tpm2_print_usage(argv[0], ctx.tool_opts);
         break;
     default:
         LOG_ERR("Unable to run %s", argv[0]);
