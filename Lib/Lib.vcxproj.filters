@@ -15,18 +15,180 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="framework.h">
+    <ClInclude Include="efi_event.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="pch.h">
+    <ClInclude Include="files.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="log.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="object.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pcr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tool_rc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tpm2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tpm2_alg_util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tpm2_attr_util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tpm2_auth_util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tpm2_capability.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tpm2_cc_util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tpm2_convert.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tpm2_ctx_mgmt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tpm2_errata.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tpm2_eventlog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tpm2_eventlog_yaml.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tpm2_hash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tpm2_header.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tpm2_hierarchy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tpm2_identity_util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tpm2_kdfa.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tpm2_kdfe.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tpm2_nv_util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tpm2_openssl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tpm2_options.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tpm2_policy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tpm2_session.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tpm2_systemdeps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tpm2_tool_output.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tpm2_util.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Lib.cpp">
+    <ClCompile Include="files.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="pch.cpp">
+    <ClCompile Include="log.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="object.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pcr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tool_rc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_alg_util.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_attr_util.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_auth_util.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_capability.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_cc_util.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_convert.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_ctx_mgmt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_errata.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_eventlog.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_eventlog_yaml.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_hash.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_hierarchy.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_identity_util.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_kdfa.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_kdfe.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_openssl.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_options.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_policy.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_session.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_tool_output.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpm2_util.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

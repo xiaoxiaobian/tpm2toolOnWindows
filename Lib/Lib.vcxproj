@@ -18,6 +18,68 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="efi_event.h" />
+    <ClInclude Include="files.h" />
+    <ClInclude Include="log.h" />
+    <ClInclude Include="object.h" />
+    <ClInclude Include="pcr.h" />
+    <ClInclude Include="tool_rc.h" />
+    <ClInclude Include="tpm2.h" />
+    <ClInclude Include="tpm2_alg_util.h" />
+    <ClInclude Include="tpm2_attr_util.h" />
+    <ClInclude Include="tpm2_auth_util.h" />
+    <ClInclude Include="tpm2_capability.h" />
+    <ClInclude Include="tpm2_cc_util.h" />
+    <ClInclude Include="tpm2_convert.h" />
+    <ClInclude Include="tpm2_ctx_mgmt.h" />
+    <ClInclude Include="tpm2_errata.h" />
+    <ClInclude Include="tpm2_eventlog.h" />
+    <ClInclude Include="tpm2_eventlog_yaml.h" />
+    <ClInclude Include="tpm2_hash.h" />
+    <ClInclude Include="tpm2_header.h" />
+    <ClInclude Include="tpm2_hierarchy.h" />
+    <ClInclude Include="tpm2_identity_util.h" />
+    <ClInclude Include="tpm2_kdfa.h" />
+    <ClInclude Include="tpm2_kdfe.h" />
+    <ClInclude Include="tpm2_nv_util.h" />
+    <ClInclude Include="tpm2_openssl.h" />
+    <ClInclude Include="tpm2_options.h" />
+    <ClInclude Include="tpm2_policy.h" />
+    <ClInclude Include="tpm2_session.h" />
+    <ClInclude Include="tpm2_systemdeps.h" />
+    <ClInclude Include="tpm2_tool_output.h" />
+    <ClInclude Include="tpm2_util.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="files.c" />
+    <ClCompile Include="log.c" />
+    <ClCompile Include="object.c" />
+    <ClCompile Include="pcr.c" />
+    <ClCompile Include="tool_rc.c" />
+    <ClCompile Include="tpm2.c" />
+    <ClCompile Include="tpm2_alg_util.c" />
+    <ClCompile Include="tpm2_attr_util.c" />
+    <ClCompile Include="tpm2_auth_util.c" />
+    <ClCompile Include="tpm2_capability.c" />
+    <ClCompile Include="tpm2_cc_util.c" />
+    <ClCompile Include="tpm2_convert.c" />
+    <ClCompile Include="tpm2_ctx_mgmt.c" />
+    <ClCompile Include="tpm2_errata.c" />
+    <ClCompile Include="tpm2_eventlog.c" />
+    <ClCompile Include="tpm2_eventlog_yaml.c" />
+    <ClCompile Include="tpm2_hash.c" />
+    <ClCompile Include="tpm2_hierarchy.c" />
+    <ClCompile Include="tpm2_identity_util.c" />
+    <ClCompile Include="tpm2_kdfa.c" />
+    <ClCompile Include="tpm2_kdfe.c" />
+    <ClCompile Include="tpm2_openssl.c" />
+    <ClCompile Include="tpm2_options.c" />
+    <ClCompile Include="tpm2_policy.c" />
+    <ClCompile Include="tpm2_session.c" />
+    <ClCompile Include="tpm2_tool_output.c" />
+    <ClCompile Include="tpm2_util.c" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{FAC9706B-411B-4374-AEB7-ABBE0A2E0613}</ProjectGuid>
@@ -42,8 +104,8 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
-    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141_clang_c2</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
@@ -75,6 +137,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\repo\tpm2-tss\include\;C:\Program Files\OpenSSL-Win64\include;../tools;../Misc;$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -99,13 +163,14 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_WIN64;ESYS_3_0;_CRT_SECURE_NO_WARNINGS;INTERNALBUILD;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderCompileAs>CompileAsC</PrecompiledHeaderCompileAs>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -150,19 +215,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClInclude Include="framework.h" />
-    <ClInclude Include="pch.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Lib.cpp" />
-    <ClCompile Include="pch.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
-    </ClCompile>
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
