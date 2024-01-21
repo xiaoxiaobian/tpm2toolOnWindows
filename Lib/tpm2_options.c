@@ -8,14 +8,14 @@
 #include <ctype.h>
 
 #include <fcntl.h>
-#include <libgen.h>
-#include <unistd.h>
+//#include <libgen.h>
+//#include <unistd.h>
 
 #include <tss2/tss2_tctildr.h>
 
-#include <sys/types.h>
-#include <sys/wait.h>
-#include <sys/stat.h>
+//#include <sys/types.h>
+//#include <sys/wait.h>
+//#include <sys/stat.h>
 
 #include "config.h"
 #include "log.h"
@@ -117,7 +117,7 @@ void tpm2_options_free(tpm2_options *opts) {
 }
 
 static bool execute_man(char *prog_name, bool show_errors) {
-
+#if 0
     pid_t pid;
     if ((pid = fork()) < 0) {
         LOG_ERR("Could not fork process to execute man, error: %s",
@@ -184,7 +184,7 @@ static bool execute_man(char *prog_name, bool show_errors) {
 
         return WEXITSTATUS(status) == 0;
     }
-
+#endif
     return true;
 }
 

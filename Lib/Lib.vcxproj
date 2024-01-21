@@ -137,7 +137,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>C:\repo\tpm2-tss\include\;C:\Program Files\OpenSSL-Win64\include;../tools;../Misc;$(IncludePath)</IncludePath>
+    <IncludePath>C:\repo\tpm2-tss\include\;C:\Program Files\OpenSSL-Win64\include;../tools;../Misc;../lib;$(IncludePath)</IncludePath>
     <LibraryPath>$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">

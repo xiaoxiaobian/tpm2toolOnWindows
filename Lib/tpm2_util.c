@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: BSD-3-Clause */
 
 #include <ctype.h>
-#include <dlfcn.h>
+//#include <dlfcn.h>
 #include <inttypes.h>
 #include <stdio.h>
 #include <stdlib.h>
