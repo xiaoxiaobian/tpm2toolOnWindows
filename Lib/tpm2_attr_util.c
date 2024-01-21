@@ -456,7 +456,7 @@ static bool common_strtoattr(char *attribute_list, void *attrs,
         return false;
     }
 
-    while ((token = strtok_r(attribute_list, "|", &save))) {
+    while ((token = strtok_s(attribute_list, "|", &save))) {
         attribute_list = NULL;
 
         bool did_dispatch = false;

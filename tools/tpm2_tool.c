@@ -77,7 +77,7 @@ void tpm2_tool_register(const tpm2_tool *tool) {
 
 static const char *tpm2_tool_name(const char *arg) {
 
-    const char *name = rindex(arg, '/');
+    const char *name = strrchr(arg, '/');
     if (name) {
         name++; // skip the '/'
     } else {

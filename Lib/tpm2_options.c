@@ -203,6 +203,7 @@ static void show_version(const char *name) {
 }
 
 void tpm2_print_usage(const char *command, struct tpm2_options *tool_opts) {
+#if 0    
     unsigned int i;
     bool indent = true;
     char *command_copy;
@@ -244,6 +245,7 @@ void tpm2_print_usage(const char *command, struct tpm2_options *tool_opts) {
             printf("\n");
         }
     }
+#endif    
 }
 
 static TSS2_RC tcti_fake_receive (TSS2_TCTI_CONTEXT *tctiContext, size_t *response_size,

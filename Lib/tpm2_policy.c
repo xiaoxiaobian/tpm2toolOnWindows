@@ -615,14 +615,14 @@ bool tpm2_policy_parse_policy_list(char *str, TPML_DIGEST *policy_list) {
 
     for (j = 1, str1 = str;; j++, str1 = NULL) {
 
-        token = strtok_r(str1, delimiter1, &saveptr1);
+        token = strtok_s(str1, delimiter1, &saveptr1);
         if (token == NULL) {
             break;
         }
 
         for (str2 = token;; str2 = NULL) {
 
-            subtoken = strtok_r(str2, delimiter2, &saveptr2);
+            subtoken = strtok_s(str2, delimiter2, &saveptr2);
             if (subtoken == NULL) {
                 break;
             }

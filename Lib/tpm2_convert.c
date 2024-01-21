@@ -30,9 +30,9 @@ static bool tpm2_convert_pubkey_ssl(TPMT_PUBLIC *public,
 tpm2_convert_pcrs_output_fmt tpm2_convert_pcrs_output_fmt_from_optarg(
     const char *label) {
 
-    if (strcasecmp(label, "values") == 0) {
+    if (_stricmp(label, "values") == 0) {
         return pcrs_output_format_values;
-    } else if (strcasecmp(label, "serialized") == 0) {
+    } else if (_stricmp(label, "serialized") == 0) {
         return pcrs_output_format_serialized;
     }
 
@@ -42,13 +42,13 @@ tpm2_convert_pcrs_output_fmt tpm2_convert_pcrs_output_fmt_from_optarg(
 }
 
 tpm2_convert_pubkey_fmt tpm2_convert_pubkey_fmt_from_optarg(const char *label) {
-    if (strcasecmp(label, "der") == 0) {
+    if (_stricmp(label, "der") == 0) {
         return pubkey_format_der;
-    } else if (strcasecmp(label, "pem") == 0) {
+    } else if (_stricmp(label, "pem") == 0) {
         return pubkey_format_pem;
-    } else if (strcasecmp(label, "tss") == 0) {
+    } else if (_stricmp(label, "tss") == 0) {
         return pubkey_format_tss;
-    } else if (strcasecmp(label, "tpmt") == 0) {
+    } else if (_stricmp(label, "tpmt") == 0) {
         return pubkey_format_tpmt;
     }
 
@@ -58,9 +58,9 @@ tpm2_convert_pubkey_fmt tpm2_convert_pubkey_fmt_from_optarg(const char *label) {
 }
 
 tpm2_convert_sig_fmt tpm2_convert_sig_fmt_from_optarg(const char *label) {
-    if (strcasecmp(label, "tss") == 0) {
+    if (_stricmp(label, "tss") == 0) {
         return signature_format_tss;
-    } else if (strcasecmp(label, "plain") == 0) {
+    } else if (_stricmp(label, "plain") == 0) {
         return signature_format_plain;
     }
 

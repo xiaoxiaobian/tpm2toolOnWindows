@@ -552,7 +552,7 @@ bool tpm2_alg_util_handle_ext_alg(const char *alg_spec, TPM2B_PUBLIC *public) {
     char *tok = NULL;
     char *saveptr = NULL;
     unsigned i = 0;
-    while ((tok = strtok_r(b, ":", &saveptr))) {
+    while ((tok = strtok_s(b, ":", &saveptr))) {
         b = NULL;
 
         switch (i) {
@@ -813,7 +813,7 @@ bool pcr_parse_digest_list(char **argv, int len,
 
         /* keep track of digests we have seen */
 
-        while ((digest_hash_tok = strtok_r(digest_spec_str, ",", &save_ptr))) {
+        while ((digest_hash_tok = strtok_s(digest_spec_str, ",", &save_ptr))) {
             digest_spec_str = NULL;
 
             if (count >= ARRAY_LEN(dspec->digests.digests)) {

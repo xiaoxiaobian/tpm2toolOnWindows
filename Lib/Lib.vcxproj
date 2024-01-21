@@ -19,6 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\Misc\endian.h" />
+    <ClInclude Include="..\Misc\getopt.h" />
     <ClInclude Include="efi_event.h" />
     <ClInclude Include="files.h" />
     <ClInclude Include="log.h" />
@@ -52,6 +54,7 @@
     <ClInclude Include="tpm2_util.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\Misc\getopt.c" />
     <ClCompile Include="files.c" />
     <ClCompile Include="log.c" />
     <ClCompile Include="object.c" />
